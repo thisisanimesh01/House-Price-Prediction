@@ -1,0 +1,113 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict</title>  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            background-image: url("{% static 'img2.jpg' %}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+        }
+
+        .main {
+            position: absolute;
+            top: 22%;
+            left: 5%;
+            width: 50%;
+            background-color: transparent; /* slight white background */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0);
+        }
+
+        input[type=submit] {
+            background-color: black;
+            color: white;
+            padding: 12px 24px;
+            font-size: 18px;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: black;
+        }
+
+        h2 {
+            font-size: 26px;
+            color:rgb(5, 32, 118);
+            margin-top: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main text-center">
+        <h1>Please enter the details</h1>
+        <form action="/predict/result/" method="get">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Avg. Area Income</label>
+                    <input type="text" class="form-control" name="n1" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Avg. Area House Age</label>
+                    <input type="text" class="form-control" name="n2" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Avg. Area Number of Rooms</label>
+                    <input type="text" class="form-control" name="n3" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Avg. Number of Bedrooms</label>
+                    <input type="text" class="form-control" name="n4" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label>Avg. Area Population</label>
+                    <input type="text" class="form-control" name="n5" required>
+                </div>
+            </div>
+
+            <input type="submit" value="Predict">
+        </form>
+
+        {% if result2 %}
+            <div class="mt-4">
+                <h2>{{ result2 }}</h2>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
