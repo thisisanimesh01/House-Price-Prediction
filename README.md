@@ -32,10 +32,6 @@ This is a machine learning-powered web application built with **Django** that pr
   - `Area Population`
   - `Price` (Target)
 
-## 📷 Screenshots
-
-<img src="static/homepage.png" width="500"/>
-<img src="static/predictpage.png" width="500"/>
 
 ## ⚙️ Setup Instructions
 
