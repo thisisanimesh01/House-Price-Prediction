@@ -1,4 +1,4 @@
-# 🏠** House Price Prediction Web App**
+# 🏠 House Price Prediction Web App
 
 This is a machine learning-powered web application built with **Django** that predicts house prices based on input features using a **Linear Regression model** trained on the `USA_Housing.csv` dataset.
 
