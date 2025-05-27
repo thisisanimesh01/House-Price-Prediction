@@ -5,6 +5,7 @@ This is a machine learning-powered web application built with **Django** that pr
 ## 🖼️ Project Screenshot
 
 ![House Price Prediction Screenshot](HousePricePrediction/house_price_pred/static/ss1.png)
+![House Price Prediction Screenshot](HousePricePrediction/house_price_pred/static/ss2.png)
 
 ## 🚀 **Features**
 
