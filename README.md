@@ -36,13 +36,8 @@ This is a machine learning-powered web application built with **Django** that pr
   - `Avg. Area Number of Bedrooms`
   - `Area Population`
   - `Price` (Target)
+
  
-![Screenshot](https://github.com/animesh/HousePricePrediction/house_price_pred/static/ss1.png)
-![Screenshot](https://github.com/animesh/HousePricePrediction/house_price_pred/static/ss2.png)
-
-
-
-
 ## ⚙️ **Setup Instructions**
 
 1. **Clone the repository**
