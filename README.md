@@ -32,8 +32,8 @@ This is a machine learning-powered web application built with **Django** that pr
   - `Area Population`
   - `Price` (Target)
  
-![Screenshot](https://github.com/animesh/house-price-prediction/raw/main/static/ss1.png)
-![Screenshot](https://github.com/animesh/house-price-prediction/raw/main/static/ss2.png)
+![Screenshot](https://github.com/animesh/HousePricePrediction/house_price_pred/static/ss1.png)
+![Screenshot](https://github.com/animesh/HousePricePrediction/house_price_pred/static/ss2.png)
 
 
 
